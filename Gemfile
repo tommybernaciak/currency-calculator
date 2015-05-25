@@ -20,6 +20,7 @@ gem 'faker'
 
 # XML
 gem 'nori'
+gem 'whenever', :require => false
 
 # group :development do
 #   gem 'capistrano', '~> 3.2.0'
