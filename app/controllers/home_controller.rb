@@ -1,4 +1,7 @@
 class HomeController < ApplicationController
-  def index
-  end
+  #respond_to :html
+  layout "angular"
+
+  def index ; end
 end
+

@@ -1,0 +1,16 @@
+!!!
+%html.overthrow-enabled
+  %head
+    %meta{:charset => "utf-8"}/
+    %meta{:content => "IE=Edge,chrome=1", "http-equiv" => "X-UA-Compatible"}/
+    %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}/
+    %title Currency calculator
+    = stylesheet_link_tag    "application", :media => "all"
+    = javascript_include_tag "application"
+    = javascript_include_tag "http://maps.googleapis.com/maps/api/js?sensor=false"
+    = csrf_meta_tags
+  %body
+    .navbar-brand.navbar-brand-center{"yield-to" => "title"}
+      .app-body
+        .app-content
+          .scrollable.scrollable-content.overthrow{"ng-view" => ""}

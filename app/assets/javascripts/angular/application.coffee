@@ -1,7 +1,6 @@
 app = angular.module 'currency-calculator',
   [
     'ngRoute',
-    'ngCookies',
     'templates'
   ]
 

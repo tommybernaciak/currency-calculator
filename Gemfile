@@ -24,6 +24,7 @@ gem 'whenever', :require => false
 
 # FRONT-END - ANGULARJS
 gem 'bower-rails'
+gem 'angular-rails-templates'
 
 # group :development do
 #   gem 'capistrano', '~> 3.2.0'
