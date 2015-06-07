@@ -7,10 +7,14 @@
     %title Currency calculator
     = stylesheet_link_tag    "application", :media => "all"
     = javascript_include_tag "application"
-    = javascript_include_tag "http://maps.googleapis.com/maps/api/js?sensor=false"
     = csrf_meta_tags
-  %body
-    .navbar-brand.navbar-brand-center{"yield-to" => "title"}
+  %body.ng-scope.has-navbar-top.has-sidebar-left{ "ng-app" => "currency-calculator", "ng-controller" => "AppController", "ui-prevent-touchmove-defaults" => ""}
+    .sidebar.sidebar-left{"ng-include" => "'sidebar_menu.html'", "ui-track-as-search-param" => "true"}
+    .app{"ng-swipe-left" => "Ui.turnOff('uiSidebarLeft')", "ng-swipe-right" => "Ui.turnOn('uiSidebarLeft')"}
+      .navbar.navbar-app.navbar-absolute-top
+        .navbar-brand.navbar-brand-center{"yield-to" => "title"}
+        .btn-group.pull-left
+          .btn.sidebar-toggle{"ui-toggle" => "uiSidebarLeft"} menu
       .app-body
         .app-content
           .scrollable.scrollable-content.overthrow{"ng-view" => ""}

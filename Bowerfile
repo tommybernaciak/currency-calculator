@@ -4,3 +4,7 @@
 asset 'angular'
 asset 'angular-route'
 asset 'bootstrap-sass-official'
+asset 'mobile-angular-ui'
+asset 'angular-bootstrap-select'
+
+# vim: ft=ruby

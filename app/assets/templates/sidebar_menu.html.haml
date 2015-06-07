@@ -1,0 +1,20 @@
+.scrollable
+  %h1.scrollable-header
+  .scrollable-content
+    .list-group{"ui-turn-off" => "uiSidebarLeft"}
+      %a.list-group-item{ng: {click: "go('/')"}}
+        .i-sidebar
+          / = image_tag("i-home-sidebar.png")
+        Main
+      %a.list-group-item{ng: {click: "go('/list')"}}
+        .i-sidebar
+          / = image_tag("i-drop-sidebar.png")
+        Currency List
+      %a.list-group-item{ng: {click: "go('/calculator')"}}
+        .i-sidebar
+          / = image_tag("i-take-sidebar.png")
+        Calculator
+      %a.list-group-item{ng: {click: "go('/about')"}}
+        .i-sidebar
+          / = image_tag("i-history-sidebar.png")
+        About

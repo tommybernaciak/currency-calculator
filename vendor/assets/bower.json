@@ -3,6 +3,8 @@
   "dependencies": {
     "angular": "latest",
     "angular-route": "latest",
-    "bootstrap-sass-official": "latest"
+    "bootstrap-sass-official": "latest",
+    "mobile-angular-ui": "latest",
+    "angular-bootstrap-select": "latest"
   }
 }

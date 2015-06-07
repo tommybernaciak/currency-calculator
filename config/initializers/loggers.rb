@@ -1,0 +1,1 @@
+XmlLogger = Logger.new("#{Rails.root}/log/xml_logger.log")

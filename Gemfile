@@ -10,6 +10,8 @@ gem 'haml-rails'
 gem 'jquery-ui-rails'
 gem 'jquery-rails'
 
+gem 'sprockets', '2.12.3'
+
 # JSON SUPPORT
 gem 'jbuilder', '~> 2.0'
 gem 'active_model_serializers'
@@ -25,14 +27,6 @@ gem 'whenever', :require => false
 # FRONT-END - ANGULARJS
 gem 'bower-rails'
 gem 'angular-rails-templates'
-
-# group :development do
-#   gem 'capistrano', '~> 3.2.0'
-#   gem 'capistrano-rails', '~> 1.1'
-#   gem 'capistrano-bundler', '~> 1.1.3'
-#   gem 'capistrano-rvm'
-#   gem 'capistrano-bower'
-# end
 
 
 group :development do
