@@ -3,3 +3,22 @@
 @import 'mobile-angular-ui/dist/css/mobile-angular-ui-hover.min.css';
 @import 'mobile-angular-ui/dist/css/mobile-angular-ui-base.min.css';
 @import 'mobile-angular-ui/dist/css/mobile-angular-ui-desktop.min.css';
+
+
+.navbar {
+  margin-bottom: 0;
+}
+
+.app-body {
+  padding-top: 0 !important;
+  min-height: 100%;
+}
+
+.page {
+  background-color: #FFFFFF;
+  height: 100%;
+}
+
+h3 {
+  margin-top: 0;
+}

@@ -1,12 +1,7 @@
 app = angular.module('currency-calculator')
 ListController = ($scope, $http, GlobalService) ->
 
-  $http.get('/currencies/list.json').success (result) ->
-    currencies = JSON.parse(result.data)
-    for i of boxes
-      boxes[i]['expiry_date'] = Math.ceil(boxes[i]['expiry_date']/24)
-    $scope.boxes = boxes
-
-
+  $http.get('/currency_list.json').success (result) ->
+    $scope.currency = JSON.parse(result.data)
 
 app.controller 'ListController', ['$scope', '$http', 'GlobalService', ListController]

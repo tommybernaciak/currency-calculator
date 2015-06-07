@@ -1,1 +1,7 @@
-List
+.page
+  %h3 Currency List
+  .btn.btn-default refresh
+  .list-group-item.box-list{ng: {repeat: "c in currency track by $index"}}
+    .box {{c.name}} - {{ c.rate| number:4 }} - {{c.country}}
+  .list-group-item.box-list raz
+  .list-group-item.box-list dwa

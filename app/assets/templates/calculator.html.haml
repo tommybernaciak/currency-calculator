@@ -1,1 +1,11 @@
-Calc
+.page
+  .list-group-item
+    1
+    %select.selectpicker.form-control{ required: true, ng: {model: "SelectedOption", options: "c.name for c in currency track by c.id", change: 'changedValue(SelectedOption)'} }
+  .list-group-item
+    2
+    %select.selectpicker.form-control{ required: true, ng: {model: "SelectedOption", options: "c.name for c in currency track by c.id", change: 'changedValue(SelectedOption)'} }
+  .list-group-item
+    result
+  .list-group-item
+    calc

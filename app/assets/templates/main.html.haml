@@ -1,3 +1,14 @@
-Main
-
-button list, button about, button calculate
+.page
+  .list-group-item
+    .btn.btn-default{ng: {click: "go('/list')"}}
+      .i-menu
+        / = image_tag("i-drop.png")
+      Currency list
+    .btn.btn-default{ng: {click: "go('/calculator')"}}
+      .i-menu
+        / = image_tag("i-take.png")
+      Calculator
+    .btn.btn-default{ng: {click: "go('/about')"}}
+      .i-menu
+        / = image_tag("i-history.png")
+      About
