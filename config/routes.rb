@@ -3,4 +3,5 @@ Rails.application.routes.draw do
   get '/', to: 'home#index', as: :root
 
   get '/currency_list', to: 'currency#list'
+  get '/refresh', to: 'currency#refresh'
 end

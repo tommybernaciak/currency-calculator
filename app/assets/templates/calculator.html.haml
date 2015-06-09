@@ -1,11 +1,35 @@
 .page
   .list-group-item
-    1
-    %select.selectpicker.form-control{ required: true, ng: {model: "SelectedOption", options: "c.name for c in currency track by c.id", change: 'changedValue(SelectedOption)'} }
+    .value {{ value1 | number:5 }}
+    .select
+      %select.selectpicker.form-control{ng: {model: "SelectedOption1", options: "c.name for c in currency1 track by c.id", change: 'changedValue1(SelectedOption1)'} }
   .list-group-item
-    2
-    %select.selectpicker.form-control{ required: true, ng: {model: "SelectedOption", options: "c.name for c in currency track by c.id", change: 'changedValue(SelectedOption)'} }
-  .list-group-item
-    result
-  .list-group-item
-    calc
+    .value {{ value2 | number:5  }}
+    .select
+      %select.selectpicker.form-control{ng: {model: "SelectedOption2", options: "c.name for c in currency2 track by c.id", change: 'changedValue2(SelectedOption2)'} }
+  .calc-wrap
+    .btn.calc-button
+      1
+    .btn.calc-button
+      2
+    .btn.calc-button
+      3
+    .btn.calc-button
+      4
+    .btn.calc-button
+      5
+    .btn.calc-button
+      6
+    .btn.calc-button
+      7
+    .btn.calc-button
+      8
+    .btn.calc-button
+      9
+    .btn.calc-button
+      x
+    .btn.calc-button
+      0
+    .btn.calc-button
+      >
+  .list-group-item.bottom-box

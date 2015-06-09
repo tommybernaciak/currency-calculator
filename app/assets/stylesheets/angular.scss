@@ -4,6 +4,27 @@
 @import 'mobile-angular-ui/dist/css/mobile-angular-ui-base.min.css';
 @import 'mobile-angular-ui/dist/css/mobile-angular-ui-desktop.min.css';
 
+@mixin flexbox() {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+@mixin flexwrap() {
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+@mixin flexgrow($value) {
+  -webkit-box-flex-grow: $value;
+  -moz-box-flex-grow:  $value;
+  -webkit-flex-grow:  $value;
+  -ms-flex-grow:  $value;
+  flex-grow:  $value;
+}
+
 
 .navbar {
   margin-bottom: 0;
@@ -21,4 +42,36 @@
 
 h3 {
   margin-top: 0;
+}
+
+.list-group-item {
+  border-radius: 0;
+}
+
+.bottom-box {
+  min-height: 150px;
+}
+
+.value {
+  text-align: right;
+  float: right;
+  width: 50%;
+}
+.select {
+  width: 50%;
+}
+
+.calc-wrap {
+  @include flexbox();
+  @include flexwrap();
+}
+
+.calc-button {
+  display: inline-block;
+  text-align: center;
+  width: 33%;
+  @include flexgrow(1);
+  padding: 10% 0;
+  border-radius: 0;
+  border: 1px solid;
 }
