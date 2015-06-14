@@ -2,34 +2,33 @@
   .list-group-item
     .value {{ value1 | number:5 }}
     .select
-      %select.selectpicker.form-control{ng: {model: "SelectedOption1", options: "c.name for c in currency1 track by c.id", change: 'changedValue1(SelectedOption1)'} }
+      %select.selectpicker.form-control{ng: {model: "SelectedOption1", options: "c.name for c in currency1 | orderBy:'name' ", change: 'changedValue1(SelectedOption1)'} }
   .list-group-item
     .value {{ value2 | number:5  }}
     .select
-      %select.selectpicker.form-control{ng: {model: "SelectedOption2", options: "c.name for c in currency2 track by c.id", change: 'changedValue2(SelectedOption2)'} }
+      %select.selectpicker.form-control{ng: {model: "SelectedOption2", options: "c.name for c in currency2 | orderBy:'name' ", change: 'changedValue2(SelectedOption2)'} }
   .calc-wrap
-    .btn.calc-button
+    .btn.calc-button{ng: {click: "calculate(1)"}}
       1
-    .btn.calc-button
+    .btn.calc-button{ng: {click: "calculate(2)"}}
       2
-    .btn.calc-button
+    .btn.calc-button{ng: {click: "calculate(3)"}}
       3
-    .btn.calc-button
+    .btn.calc-button{ng: {click: "calculate(4)"}}
       4
-    .btn.calc-button
+    .btn.calc-button{ng: {click: "calculate(5)"}}
       5
-    .btn.calc-button
+    .btn.calc-button{ng: {click: "calculate(6)"}}
       6
-    .btn.calc-button
+    .btn.calc-button{ng: {click: "calculate(7)"}}
       7
-    .btn.calc-button
+    .btn.calc-button{ng: {click: "calculate(8)"}}
       8
-    .btn.calc-button
+    .btn.calc-button{ng: {click: "calculate(9)"}}
       9
-    .btn.calc-button
+    .btn.calc-button{ng: {click: "zero()"}}
       x
-    .btn.calc-button
+    .btn.calc-button{ng: {click: "calculate(0)"}}
       0
     .btn.calc-button
-      >
   .list-group-item.bottom-box

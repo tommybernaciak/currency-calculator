@@ -3,18 +3,14 @@
   .scrollable-content
     .list-group{"ui-turn-off" => "uiSidebarLeft"}
       %a.list-group-item{ng: {click: "go('/')"}}
-        .i-sidebar
-          / = image_tag("i-home-sidebar.png")
+        .glyphicon.glyphicon-menu-hamburger
         Main
       %a.list-group-item{ng: {click: "go('/list')"}}
-        .i-sidebar
-          / = image_tag("i-drop-sidebar.png")
+        .glyphicon.glyphicon-list
         Currency List
       %a.list-group-item{ng: {click: "go('/calculator')"}}
-        .i-sidebar
-          / = image_tag("i-take-sidebar.png")
-        Calculator
+        .glyphicon.glyphicon-euro
+        Converter
       %a.list-group-item{ng: {click: "go('/about')"}}
-        .i-sidebar
-          / = image_tag("i-history-sidebar.png")
+        .glyphicon.glyphicon-info-sign
         About

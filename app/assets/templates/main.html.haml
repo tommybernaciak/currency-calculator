@@ -1,14 +1,13 @@
 .page
   .list-group-item
-    .btn.btn-default{ng: {click: "go('/list')"}}
-      .i-menu
-        / = image_tag("i-drop.png")
+    .btn.btn-default.width-max{ng: {click: "go('/list')"}}
+      .glyphicon.glyphicon-list
       Currency list
-    .btn.btn-default{ng: {click: "go('/calculator')"}}
-      .i-menu
-        / = image_tag("i-take.png")
-      Calculator
-    .btn.btn-default{ng: {click: "go('/about')"}}
-      .i-menu
-        / = image_tag("i-history.png")
+  .list-group-item
+    .btn.btn-default.width-max{ng: {click: "go('/calculator')"}}
+      .glyphicon.glyphicon-euro
+      Converter
+  .list-group-item
+    .btn.btn-default.width-max{ng: {click: "go('/about')"}}
+      .glyphicon.glyphicon-info-sign
       About

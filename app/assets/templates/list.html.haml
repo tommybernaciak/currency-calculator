@@ -1,6 +1,9 @@
 .page
   %h3 Currency List
-  .btn.btn-default{ng:{click: "refresh()"}} refresh
+  .list-group-item
+    .btn.btn-default.width-max{ng:{click: "refresh()"}}
+      .glyphicon.glyphicon-refresh
+      refresh
   .list-group-item.box-list{ng: {repeat: "c in currency | orderBy:'name'"}}
     .box {{c.name}} - {{ c.rate| number:4 }} - {{c.country}}
   .list-group-item.bottom-box

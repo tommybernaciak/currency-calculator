@@ -9,12 +9,9 @@ class Currency < ActiveRecord::Base
       c = Currency.find_by(name: currency["@currency"])
       c.rate = currency["@rate"].to_f
       if c.save!
-        XmlLogger.info '*******'
-        XmlLogger.info 'updated'
+        puts 'updated'
       else
-        XmlLogger.info '*******'
-        XmlLogger.info 'error'
-        XmlLogger.info c
+        puts 'error'
       end
     end
   end
