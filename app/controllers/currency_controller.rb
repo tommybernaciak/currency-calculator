@@ -2,7 +2,7 @@ class CurrencyController < ApplicationController
   #respond_to :json
 
   def list
-    @currency = Currency.all.to_a
+    @currency = Currency.order(:id).to_a
     @currency_list = @currency.each do |c|
       {
         id:       c.id,
@@ -16,12 +16,10 @@ class CurrencyController < ApplicationController
 
   def refresh
     if Currency.parse_currencies_from_xml
-      XmlLogger.info '*******'
-      XmlLogger.info 'refresh'
+      puts 'refresh'
       render json: { data: 'refresh' }
     else
-      XmlLogger.info '*******'
-      XmlLogger.info 'error'
+      puts 'error'
       render json: { data: 'error' }
     end
   end
