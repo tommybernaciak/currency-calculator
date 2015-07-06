@@ -17,11 +17,11 @@ CalculatorController = ($scope, $http, GlobalService) ->
 
   $scope.changedValue1= (currency) ->
     $scope.rate1 = currency.rate
-    $scope.value2 = ( $scope.value1 * $scope.rate1 ) / $scope.rate2
+    $scope.value2 = ( $scope.value1 * $scope.rate2 ) / $scope.rate1
 
   $scope.changedValue2= (currency) ->
     $scope.rate2 = currency.rate
-    $scope.value2 = ( $scope.value1 * $scope.rate1 ) / $scope.rate2
+    $scope.value2 = ( $scope.value1 * $scope.rate2 ) / $scope.rate1
 
   $scope.calculate= (val) ->
     if ($scope.value1 == "0" || $scope.newNumber)
