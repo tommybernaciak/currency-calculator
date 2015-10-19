@@ -1,3 +1,5 @@
 == README
 
-university project. Angular / Rails currency calculator application. XML parser from European Central Bank website.
+University Project - Currency calculator. AngularJS / Rails aplication with mobile UI. XML parser from European Central Bank website.
+
+http://currency-calculator.herokuapp.com/
